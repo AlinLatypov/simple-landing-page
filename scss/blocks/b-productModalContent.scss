@@ -1,0 +1,152 @@
+.b-productModalContent{
+  background-color: #403e3b;
+
+
+  &_locality{
+    border-radius: 1vw;
+  }
+
+  &__header{
+    width: 100%;
+    padding: 2% 3%;
+
+    &_locality{
+      border: none;
+    }
+  }
+
+  &__title{
+    font-family: sfProDisplayHeavy, sans-serif;
+    font-size: 2vw;
+    @include media-breakpoint-down(md) {font-size:3.3vw;}
+    @include media-breakpoint-down(sm) {font-size:4.5vw;}
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.97;
+    letter-spacing: -0.0746vw;
+    text-align: center;
+    color:$_mainTextColor;
+  }
+
+  &__closeBtn{
+    font-family: sfProDisplayHeavy, sans-serif;
+    font-size: 2vw;
+    @include media-breakpoint-down(md) {font-size:3.3vw;}
+    @include media-breakpoint-down(sm) {font-size:4.5vw;}
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.97;
+    letter-spacing: -0.0746vw;
+    text-align: center;
+    color:$_mainTextColor;
+    box-shadow: none;
+    border: none;
+    display: block;
+
+    &:focus{
+      outline: none;
+    }
+
+    &:hover{
+      color:$_mainTextColor;
+    }
+  }
+
+  &__contentBody{
+    padding: 2.5%;
+  }
+
+  &__carousel{
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+
+  &__carouselInner{
+
+    &_locality{
+      border-radius: 1vw;
+    }
+  }
+
+  &__productDiscript{
+    width: 44%;
+
+    &_locality{
+      float: right;
+    }
+  }
+
+  &__textDescript{
+    font-family: $_contentFont;
+    font-size: 23px;
+    @include media-breakpoint-only(lg) {font-size: 16px;}
+    @include media-breakpoint-down(lg) {font-size: 10px;}
+    @include media-breakpoint-down(xs) {font-size: 8px;}
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color:$_mainTextColor;
+
+    &_locality{
+      margin-bottom: 0;
+    }
+  }
+
+  &__prodPrice{
+    font-family: $_contentFont, sans-serif;
+    font-size: 25px;
+    @include media-breakpoint-only(lg) {font-size: 18px;}
+    @include media-breakpoint-down(lg) {font-size: 11px;}
+    @include media-breakpoint-down(xs) {font-size: 9px;}
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: -0.031vw;
+    text-align: left;
+    color: $_mainTextColor;
+    opacity: 0.6;
+  }
+
+  &__addToCartBtn{
+    color: $_mainTextColor;
+    border-radius: 0.44vw;
+    background-color: $_subColor;
+    border: none;
+    font-family: sfProDisplayHeavy, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9vw;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.1;
+    letter-spacing: normal;
+    text-align: left;
+    box-shadow: none;
+    display: block;
+
+    &:focus{
+      box-shadow: none;
+      outline: none;
+    }
+
+    &:hover{
+      background-color: #f76a05;
+    }
+
+    &:active{
+      background-color: #f76a05!important;
+      box-shadow: none!important;
+    }
+
+    &_locality{
+      margin: 5% 0;
+    }
+  }
+}

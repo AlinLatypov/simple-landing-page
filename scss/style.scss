@@ -1,0 +1,76 @@
+@import "../packages/bootstrap-4.3.1/scss/bootstrap";
+@import "_variables.scss";
+@import "blocks/b-topHeaderMenu.scss";
+@import "blocks/b-mainNav.scss";
+@import "blocks/b-mainHeader.scss";
+@import "blocks/b-headerCollapseBox.scss";
+@import "blocks/b-aboutUs.scss";
+@import "blocks/b-gallery.scss";
+@import "blocks/b-productBlock.scss";
+@import "blocks/b-productItem.scss";
+@import "blocks/b-productModalContent.scss";
+@import "blocks/b-delivery.scss";
+@import "blocks/b-video.scss";
+@import "blocks/b-contacts.scss";
+@import "blocks/b-contactWithUs.scss";
+@import "blocks/b-mainFooter.scss";
+@import "blocks/b-slider.scss";
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  box-sizing: border-box;
+  background-color: $_backgroundColor;
+
+  .container-fluid{
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: minmax(50px, auto) 1fr minmax(150px, auto);
+    padding: 0;
+
+    .gallaryWrapper{
+      box-sizing: border-box;
+     // padding: 5% 0;
+      @include media-breakpoint-up(sm){
+        min-height: 40vh;
+      }
+      @include media-breakpoint-up(md) {
+        min-height: 60vh;
+      }
+      @include media-breakpoint-up(xl) {
+        min-height: 90vh;
+      }
+    }
+
+
+  }
+}
+
+.hide{
+  display: none;
+}
+
+.searchAlert{
+  margin: 0 auto;
+  display: none;
+  font-family: sfProDisplayMedium, sans-serif;
+  font-size: 1.46vw;
+  padding: 7% 32%;
+  border-radius: 2vw;
+  background-color: #2c2c2c;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.8;
+  letter-spacing: normal;
+  text-align: left;
+  color: $_mainTextColor;
+}
+
+.showSearchAlert{
+  display: block;
+}

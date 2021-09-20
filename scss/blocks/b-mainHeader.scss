@@ -1,0 +1,61 @@
+.b-mainHeader{
+  width: 100%;
+
+  &_locality{
+    position: relative;
+  }
+
+  &__img{
+    width: 40%;
+    height: auto;
+
+    &_locality{
+      position: relative;
+      float: right;
+      z-index: 0;
+    }
+  }
+
+  &__slogan{
+    font-family: $_headerFont;
+    font-size: 5vw;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: -0.065vw;
+    text-align: left;
+    color: $_mainTextColor;
+    z-index: 1;
+
+
+    &_locality{
+      position: absolute;
+      display: block;
+      top: 5vw;
+      left: 5.27vw;
+      @include media-breakpoint-down(sm) {
+        top:7vw;}
+    }
+  }
+
+  &__subSlogan{
+    font-family: $_contentFont;
+    font-size: 1.68vw;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.48;
+    letter-spacing: normal;
+    text-align: left;
+    color: $_subTextColor;
+
+    &_locality{
+      position: absolute;
+      top: 19vw;
+      left: 5.27vw;
+      @include media-breakpoint-down(sm) {
+        top:22vw;}
+    }
+  }
+}

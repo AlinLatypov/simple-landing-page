@@ -1,0 +1,54 @@
+//fonts
+@font-face {
+  font-family: sfProDisplayBold;
+  src: url('../fonts/SFProDisplayBold.ttf');
+}
+@font-face {
+  font-family: sfProDisplayHeavy;
+  src: url('../fonts/SFProDisplayHeavy.ttf');
+}
+@font-face {
+  font-family: sfProDisplayMedium;
+  src: url('../fonts/SFProDisplayMedium.ttf');
+}
+@font-face {
+  font-family: openSansSemiBold;
+  src: url('../fonts/оpenSansSemiBold.ttf');
+}
+//fontVariables
+$_headerFont:'sfProDisplayBold', sans-serif;
+$_contentFont:'sfProDisplayMedium', sans-serif;
+
+//colors
+$_backgroundColor:#1a1a1a;
+$_mainTextColor:#ffffff;
+$_subTextColor:#707070;
+$_subColor:#ffcc00;
+$_collapseBackgroundColor:#242321;
+
+//mixins
+@mixin subSectionHeader{
+  opacity: 0.5;
+  font-family: $_headerFont;
+  font-size: 1.9vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: -0.057vw;
+  text-align: left;
+  color: $_subTextColor;
+}
+
+@mixin sectionHeader{
+  font-family: $_headerFont;
+  font-size: 3.2vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: -0.14vw;
+  text-align: left;
+  color: $_mainTextColor;
+}
+

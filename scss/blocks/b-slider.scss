@@ -1,0 +1,65 @@
+.b-slideshowContainer{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+
+  .imgBlock{
+    position: relative;
+  }
+
+  &__buttons{
+    width: 8%;
+    height: 8%;
+    position: absolute;
+    background-color:black;
+    opacity: 0.7;
+    color: $_subColor;
+    z-index: 1;
+    &:focus{
+      outline: none;
+    }
+
+    &:hover{
+      background-color: $_subColor;
+      color: black;
+      transition-duration: 1s;
+    }
+
+    &_localityLeftBtn{
+      left: 0;
+      bottom: 50%;
+      border: none;
+    }
+
+    &_localityRightBtn{
+        right: 0;
+        bottom: 50%;
+        border: none;
+    }
+
+    &_localityCloseBtn{
+      right: 0;
+      top:0;
+      border: none;
+      border-radius: 0 2vw 0 0;
+    }
+  }
+
+  &__bigImage{
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-radius: 2vw;
+
+    @include media-breakpoint-down(md) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &_locality{
+    margin: 9% auto 5%;
+  }
+}

@@ -1,0 +1,75 @@
+.b-topHeaderMenu{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.5% 1.8%;
+  @include media-breakpoint-down(sm) {padding: 0.5% 10%;}
+  @include media-breakpoint-down(md) {padding: 3% 10%;}
+
+    &_locality{
+      margin: 0 auto;
+    }
+
+    &__logoBox{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    &__siteLogo{
+      width: 44%;
+      height: auto;
+    }
+
+    &__searchButtonBox {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &_locality{
+        @include media-breakpoint-down(xs) {display: none;}
+      }
+    }
+
+    &__searchInput{
+      width: 50%;
+      box-sizing: border-box;
+      padding: 2%;
+      border: none;
+      background-color: #36333c;
+      border-radius: 1vw;
+      color: $_mainTextColor;
+      opacity: 0.5;
+      font-family: sfProDisplayMedium, sans-serif;
+      font-size: 1vw;
+      @include media-breakpoint-down(sm) {font-size: 2.5vw;}
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.2;
+      letter-spacing: normal;
+      text-align: left;
+
+      &::placeholder{
+        color: $_mainTextColor;
+        opacity: 0.5;
+        font-family: sfProDisplayMedium, sans-serif;
+        font-size: 1vw;
+        @include media-breakpoint-down(sm) {font-size: 2.5vw;}
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-align: left;
+      }
+
+      &:focus{
+        outline: none;
+      }
+
+      &_locality{
+        margin-right: 4%;
+      }
+    }
+}

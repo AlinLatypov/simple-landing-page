@@ -1,0 +1,49 @@
+.b-delivery{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8% 4.5%;
+
+  &_locality{
+    margin-top: 5vw;
+  }
+
+  &__img{
+    width: 30%;
+    height: auto;
+
+    &_locality{
+      float: left;
+      margin-right: 5.56%;
+    }
+  }
+
+  &__subSlogan{
+    @include  subSectionHeader;
+
+    &_locality{
+      margin-top:6%;
+    }
+  }
+
+  &__slogan{
+    @include sectionHeader;
+  }
+
+  &__info{
+    font-family: $_contentFont;
+    font-size: 1.4vw;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color:$_mainTextColor;
+
+    &_locality{
+      margin-bottom: 1.61%;
+      @include media-breakpoint-down(xs) {margin-bottom: -2%;}
+    }
+  }
+
+}

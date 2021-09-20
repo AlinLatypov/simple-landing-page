@@ -1,0 +1,93 @@
+.b-contactWithUs{
+  width: 100%;
+  height: auto;
+
+  &_locality{
+    margin-top: 5%;
+    @include media-breakpoint-down(sm) {margin-top: 9%;}
+    @include media-breakpoint-down(md) {margin-top: 7%;}
+  }
+
+  &__title{
+    opacity: 0.8;
+    font-size: 2.9vw;
+
+    @include media-breakpoint-down(sm) {font-size: 9vw;}
+    @include media-breakpoint-down(md) {font-size: 4vw;}
+    font-weight: 100;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $_mainTextColor;
+  }
+
+  &__mailBox{
+    width: 30%;
+    @include media-breakpoint-down(sm) {width: 45%;}
+    height: auto;
+    //background-color: #0f6674;
+    box-sizing: border-box;
+    padding: 0.8% 0;
+    border-bottom: solid 2px #707070;
+
+
+    &_locality{
+      margin: 5.8% auto 0;
+    }
+  }
+
+  &__placeForEmail{
+    border: none;
+    background-color: $_backgroundColor;
+    opacity: 0.5;
+    font-family: sfProDisplayMedium, sans-serif;
+    font-size: 1.4vw;
+    @include media-breakpoint-down(sm) {font-size: 2.5vw;}
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: $_mainTextColor;
+    display: block;
+
+    &:focus{
+      outline: none;
+    }
+
+    &_locality{
+      float: left;
+      margin-left: 25%;
+    }
+  }
+
+  &__sendButton{
+    background-color: $_backgroundColor;
+    color: $_subColor;
+    border: none;
+
+    &:focus{
+      outline: none;
+    }
+
+    &_locality{
+      float: right;
+    }
+  }
+}
+
+.clearfix{
+  :after {
+    content: "";
+    display: table;
+    clear: both;
+}
+}
+
+
+
+
+

@@ -1,0 +1,47 @@
+.b-contacts {
+  width: 100%;
+  height: 30vw;
+  @include media-breakpoint-down(sm) {height: 100vw;}
+  @include media-breakpoint-down(md) {height: 50vw;}
+  padding: 2.5vw;
+
+  &__contactsBlock{
+    display: block;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 10%;
+
+
+    &_locality{
+      float: left;
+    }
+  }
+
+  &__title{
+    @include sectionHeader;
+    margin-bottom: 5%;
+  }
+
+  &__contactInfo{
+
+    opacity: 0.5;
+    font-family: sfProDisplayMedium, sans-serif;
+    font-size: 1.46vw;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.8;
+    letter-spacing: normal;
+    text-align: left;
+    color: $_mainTextColor;
+  }
+}
+
+.clearfix{
+
+  :after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@font-face {
+  font-family: sfProDisplayBold;
+  src: url("../fonts/SFProDisplayBold.ttf"); }
+
+@font-face {
+  font-family: sfProDisplayHeavy;
+  src: url("../fonts/SFProDisplayHeavy.ttf"); }
+
+@font-face {
+  font-family: sfProDisplayMedium;
+  src: url("../fonts/SFProDisplayMedium.ttf"); }
+
+@font-face {
+  font-family: openSansSemiBold;
+  src: url("../fonts/оpenSansSemiBold.ttf"); }

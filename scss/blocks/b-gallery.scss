@@ -1,0 +1,45 @@
+.b-gallery{
+  width: 70%;
+  background-color: $_collapseBackgroundColor;
+  border-radius: 2vw;
+  box-sizing: border-box;
+  padding: 1.5% 1.5% 1% 1.5%;
+  display: grid;
+  grid-gap: 1vw;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:repeat(2, 1fr);
+  @include media-breakpoint-down(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+  }
+
+    &__img{
+
+      img{
+        width: 100%;
+        height: auto;
+        border-radius: 2vw;
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__middleImg{
+
+      &_locality{
+        grid-column: 2/3;
+        grid-row: 1/4;
+        @include media-breakpoint-down(sm){
+          display: none;
+        }
+      }
+    }
+
+
+  &_locality{
+    margin: 6% auto 0;
+    @include media-breakpoint-down(xs) {display: none;}
+  }
+}

@@ -1,0 +1,34 @@
+.b-productBlock {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 5vw 4vw ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  @include media-breakpoint-down(xs) {
+    justify-content: space-around;
+  }
+  @include media-breakpoint-down(sm) {
+    justify-content: space-around;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 7vw 15vw;
+  }
+
+  &__header{
+    width: 100%;
+
+    &_locality{
+      margin-bottom: 3%;
+    }
+  }
+
+  &__subSlogan{
+    @include subSectionHeader;
+  }
+
+  &__slogan{
+    @include sectionHeader;
+  }
+}
